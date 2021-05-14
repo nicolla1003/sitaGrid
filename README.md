@@ -1,15 +1,16 @@
 # sitaGrid
 
 Goal:
-⁃ Display a grid of items
-⁃ Each row in the grid has 3 items
-⁃ Each item show the image (if any) and name
-⁃ Fetch the data from REST API https://2a6d3177-4681-4fc9-97b9-e4e9580db87a.mock.pstmn.io/airlines
-⁃ Tapping on an item leads you to a detail view
-⁃ The detail view shows image (if any), name, country and if it’s currently active
-⁃ BONUS: Search through the items with a search bar at the top
-⁃ BONUS: Persist the items so that they are available offline
-⁃ BONUS: Each item can be assigned as favourite
+1. Display a grid of items
+2. Each row in the grid has 3 items
+3. Each item show the image (if any) and name
+4. Fetch the data from REST API https://2a6d3177-4681-4fc9-97b9-e4e9580db87a.mock.pstmn.io/airlines
+5. Tapping on an item leads you to a detail view
+6. The detail view shows image (if any), name, country and if it’s currently active
+7. BONUS: Search through the items with a search bar at the top
+8. BONUS: Persist the items so that they are available offline
+9. BONUS: Each item can be assigned as favourite
+
 
 
 Notes:
