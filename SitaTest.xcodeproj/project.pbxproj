@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9307DBAC264D690800425420 /* CDAirline+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307DBAB264D690800425420 /* CDAirline+Mapping.swift */; };
+		9307DBAE264D6F4400425420 /* CoreDataContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307DBAD264D6F4400425420 /* CoreDataContoller.swift */; };
+		9307DBB0264D6F6C00425420 /* CoreDataControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307DBAF264D6F6C00425420 /* CoreDataControllable.swift */; };
+		9307DBB7264D725B00425420 /* DataProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307DBB6264D725B00425420 /* DataProviderError.swift */; };
+		9307DBC4264DDE6800425420 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9307DBC3264DDE6800425420 /* CombineCocoa */; };
+		9307DBC8264DED8200425420 /* FakeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307DBC7264DED8200425420 /* FakeDataProvider.swift */; };
+		93B8B971264C02B7009F43B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B970264C02B7009F43B2 /* AppDelegate.swift */; };
+		93B8B973264C02B7009F43B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B972264C02B7009F43B2 /* SceneDelegate.swift */; };
+		93B8B97B264C02B7009F43B2 /* SitaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B979264C02B7009F43B2 /* SitaTest.xcdatamodeld */; };
+		93B8B97D264C02B9009F43B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B8B97C264C02B9009F43B2 /* Assets.xcassets */; };
+		93B8B980264C02B9009F43B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B8B97E264C02B9009F43B2 /* LaunchScreen.storyboard */; };
+		93B8B996264C02B9009F43B2 /* SitaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B995264C02B9009F43B2 /* SitaTestUITests.swift */; };
+		93B8B9A4264C773F009F43B2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9A3264C773F009F43B2 /* Coordinator.swift */; };
+		93B8B9A6264C784E009F43B2 /* AirlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9A5264C784E009F43B2 /* AirlinesViewController.swift */; };
+		93B8B9A8264C7861009F43B2 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9A7264C7861009F43B2 /* Airline.swift */; };
+		93B8B9AA264C7F58009F43B2 /* AirlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9A9264C7F58009F43B2 /* AirlineData.swift */; };
+		93B8B9AC264C8308009F43B2 /* AirlineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9AB264C8308009F43B2 /* AirlineDetailsViewController.swift */; };
+		93B8B9AE264C8328009F43B2 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9AD264C8328009F43B2 /* Storyboarded.swift */; };
+		93B8B9B0264C837A009F43B2 /* AirlinesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9AF264C837A009F43B2 /* AirlinesCoordinator.swift */; };
+		93B8B9B2264C8405009F43B2 /* Airlinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9B1264C8405009F43B2 /* Airlinable.swift */; };
+		93B8B9B4264C8484009F43B2 /* Airlines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B8B9B3264C8484009F43B2 /* Airlines.storyboard */; };
+		93B8B9B8264C8565009F43B2 /* AirlinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9B7264C8565009F43B2 /* AirlinesViewModel.swift */; };
+		93B8B9BA264C8579009F43B2 /* AirlineDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9B9264C8579009F43B2 /* AirlineDetailsViewModel.swift */; };
+		93B8B9BE264C85E9009F43B2 /* AirlinesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9BD264C85E9009F43B2 /* AirlinesWebRepository.swift */; };
+		93B8B9C0264C8604009F43B2 /* AirlinesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9BF264C8604009F43B2 /* AirlinesRepository.swift */; };
+		93B8B9C2264C8740009F43B2 /* FakeAirlinesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9C1264C8740009F43B2 /* FakeAirlinesWebRepository.swift */; };
+		93B8B9C4264C8900009F43B2 /* AirlinesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9C3264C8900009F43B2 /* AirlinesViewModelSpec.swift */; };
+		93B8B9C6264C89CF009F43B2 /* AirlineDetailsViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9C5264C89CF009F43B2 /* AirlineDetailsViewModelSpec.swift */; };
+		93B8B9C9264C8A20009F43B2 /* AirlineData+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9C8264C8A20009F43B2 /* AirlineData+Fixture.swift */; };
+		93B8B9CC264C8C72009F43B2 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9CB264C8C72009F43B2 /* HttpClient.swift */; };
+		93B8B9CE264C8D53009F43B2 /* HttpEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9CD264C8D53009F43B2 /* HttpEndpoint.swift */; };
+		93B8B9D0264C8D73009F43B2 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9CF264C8D73009F43B2 /* HttpMethod.swift */; };
+		93B8B9D2264C8E34009F43B2 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9D1264C8E34009F43B2 /* HttpError.swift */; };
+		93B8B9D5264C968D009F43B2 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8B9D4264C968D009F43B2 /* Publisher+Utils.swift */; };
+		93F78634264D171100137113 /* AirlinesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78633264D171100137113 /* AirlinesDataSource.swift */; };
+		93F78636264D17BF00137113 /* AirlineCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78635264D17BF00137113 /* AirlineCollectionCell.swift */; };
+		93F7863A264D3E0B00137113 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78639264D3E0B00137113 /* Downloader.swift */; };
+		93F7863D264D4A5700137113 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 93F7863C264D4A5700137113 /* SDWebImage */; };
+		93F7863F264D56D100137113 /* URL+ImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7863E264D56D100137113 /* URL+ImageTest.swift */; };
+		93F78641264D58B900137113 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78640264D58B900137113 /* CoreDataProvider.swift */; };
+		93F78643264D58C200137113 /* DataProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F78642264D58C200137113 /* DataProvidable.swift */; };
+		93F7864D264D5D3100137113 /* CDPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7864C264D5D3100137113 /* CDPublisher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93B8B987264C02B9009F43B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B8B965264C02B7009F43B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93B8B96C264C02B7009F43B2;
+			remoteInfo = SitaTest;
+		};
+		93B8B992264C02B9009F43B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B8B965264C02B7009F43B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93B8B96C264C02B7009F43B2;
+			remoteInfo = SitaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9307DBAB264D690800425420 /* CDAirline+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDAirline+Mapping.swift"; sourceTree = "<group>"; };
+		9307DBAD264D6F4400425420 /* CoreDataContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContoller.swift; sourceTree = "<group>"; };
+		9307DBAF264D6F6C00425420 /* CoreDataControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataControllable.swift; sourceTree = "<group>"; };
+		9307DBB6264D725B00425420 /* DataProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderError.swift; sourceTree = "<group>"; };
+		9307DBC7264DED8200425420 /* FakeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataProvider.swift; sourceTree = "<group>"; };
+		93B8B96D264C02B7009F43B2 /* SitaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B8B970264C02B7009F43B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93B8B972264C02B7009F43B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93B8B97A264C02B7009F43B2 /* SitaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SitaTest.xcdatamodel; sourceTree = "<group>"; };
+		93B8B97C264C02B9009F43B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93B8B97F264C02B9009F43B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93B8B981264C02B9009F43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B8B986264C02B9009F43B2 /* SitaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SitaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B8B98C264C02B9009F43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B8B991264C02B9009F43B2 /* SitaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SitaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B8B995264C02B9009F43B2 /* SitaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitaTestUITests.swift; sourceTree = "<group>"; };
+		93B8B997264C02B9009F43B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B8B9A3264C773F009F43B2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		93B8B9A5264C784E009F43B2 /* AirlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesViewController.swift; sourceTree = "<group>"; };
+		93B8B9A7264C7861009F43B2 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		93B8B9A9264C7F58009F43B2 /* AirlineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineData.swift; sourceTree = "<group>"; };
+		93B8B9AB264C8308009F43B2 /* AirlineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineDetailsViewController.swift; sourceTree = "<group>"; };
+		93B8B9AD264C8328009F43B2 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		93B8B9AF264C837A009F43B2 /* AirlinesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesCoordinator.swift; sourceTree = "<group>"; };
+		93B8B9B1264C8405009F43B2 /* Airlinable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airlinable.swift; sourceTree = "<group>"; };
+		93B8B9B3264C8484009F43B2 /* Airlines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Airlines.storyboard; sourceTree = "<group>"; };
+		93B8B9B7264C8565009F43B2 /* AirlinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesViewModel.swift; sourceTree = "<group>"; };
+		93B8B9B9264C8579009F43B2 /* AirlineDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineDetailsViewModel.swift; sourceTree = "<group>"; };
+		93B8B9BD264C85E9009F43B2 /* AirlinesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesWebRepository.swift; sourceTree = "<group>"; };
+		93B8B9BF264C8604009F43B2 /* AirlinesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesRepository.swift; sourceTree = "<group>"; };
+		93B8B9C1264C8740009F43B2 /* FakeAirlinesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAirlinesWebRepository.swift; sourceTree = "<group>"; };
+		93B8B9C3264C8900009F43B2 /* AirlinesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesViewModelSpec.swift; sourceTree = "<group>"; };
+		93B8B9C5264C89CF009F43B2 /* AirlineDetailsViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineDetailsViewModelSpec.swift; sourceTree = "<group>"; };
+		93B8B9C8264C8A20009F43B2 /* AirlineData+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AirlineData+Fixture.swift"; sourceTree = "<group>"; };
+		93B8B9CB264C8C72009F43B2 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		93B8B9CD264C8D53009F43B2 /* HttpEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpEndpoint.swift; sourceTree = "<group>"; };
+		93B8B9CF264C8D73009F43B2 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		93B8B9D1264C8E34009F43B2 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		93B8B9D4264C968D009F43B2 /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		93F78633264D171100137113 /* AirlinesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesDataSource.swift; sourceTree = "<group>"; };
+		93F78635264D17BF00137113 /* AirlineCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineCollectionCell.swift; sourceTree = "<group>"; };
+		93F78639264D3E0B00137113 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		93F7863E264D56D100137113 /* URL+ImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ImageTest.swift"; sourceTree = "<group>"; };
+		93F78640264D58B900137113 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		93F78642264D58C200137113 /* DataProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvidable.swift; sourceTree = "<group>"; };
+		93F7864C264D5D3100137113 /* CDPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPublisher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93B8B96A264C02B7009F43B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9307DBC4264DDE6800425420 /* CombineCocoa in Frameworks */,
+				93F7863D264D4A5700137113 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B983264C02B9009F43B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B98E264C02B9009F43B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9307DBB2264D6FA900425420 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B979264C02B7009F43B2 /* SitaTest.xcdatamodeld */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		9307DBB3264D6FB800425420 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9307DBAB264D690800425420 /* CDAirline+Mapping.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9307DBB4264D6FCE00425420 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				9307DBAD264D6F4400425420 /* CoreDataContoller.swift */,
+				9307DBAF264D6F6C00425420 /* CoreDataControllable.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		9307DBB5264D6FE000425420 /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				9307DBB6264D725B00425420 /* DataProviderError.swift */,
+				93F78640264D58B900137113 /* CoreDataProvider.swift */,
+				93F78642264D58C200137113 /* DataProvidable.swift */,
+			);
+			path = "Data Providers";
+			sourceTree = "<group>";
+		};
+		9307DBC5264DECA500425420 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9A5264C784E009F43B2 /* AirlinesViewController.swift */,
+				93B8B9AB264C8308009F43B2 /* AirlineDetailsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9307DBC6264DECB700425420 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				93F78633264D171100137113 /* AirlinesDataSource.swift */,
+				93F78635264D17BF00137113 /* AirlineCollectionCell.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		93B8B964264C02B7009F43B2 = {
+			isa = PBXGroup;
+			children = (
+				93B8B96F264C02B7009F43B2 /* SitaTest */,
+				93B8B989264C02B9009F43B2 /* SitaTestTests */,
+				93B8B994264C02B9009F43B2 /* SitaTestUITests */,
+				93B8B96E264C02B7009F43B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93B8B96E264C02B7009F43B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B96D264C02B7009F43B2 /* SitaTest.app */,
+				93B8B986264C02B9009F43B2 /* SitaTestTests.xctest */,
+				93B8B991264C02B9009F43B2 /* SitaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93B8B96F264C02B7009F43B2 /* SitaTest */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9D9264CA82B009F43B2 /* App */,
+				93B8B9DA264CA843009F43B2 /* Common */,
+				93B8B9B5264C8519009F43B2 /* Airlines Module */,
+			);
+			path = SitaTest;
+			sourceTree = "<group>";
+		};
+		93B8B989264C02B9009F43B2 /* SitaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9C7264C8A00009F43B2 /* Fake Implementations */,
+				93B8B9CA264C8A34009F43B2 /* Fixtures */,
+				93B8B9C3264C8900009F43B2 /* AirlinesViewModelSpec.swift */,
+				93B8B9C5264C89CF009F43B2 /* AirlineDetailsViewModelSpec.swift */,
+				93B8B98C264C02B9009F43B2 /* Info.plist */,
+			);
+			path = SitaTestTests;
+			sourceTree = "<group>";
+		};
+		93B8B994264C02B9009F43B2 /* SitaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B995264C02B9009F43B2 /* SitaTestUITests.swift */,
+				93B8B997264C02B9009F43B2 /* Info.plist */,
+			);
+			path = SitaTestUITests;
+			sourceTree = "<group>";
+		};
+		93B8B9B5264C8519009F43B2 /* Airlines Module */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9B6264C8540009F43B2 /* UI */,
+				93B8B9BB264C858B009F43B2 /* Business Logic */,
+				93B8B9BC264C85AF009F43B2 /* Service */,
+				93B8B9D6264CA7E6009F43B2 /* Storage */,
+			);
+			path = "Airlines Module";
+			sourceTree = "<group>";
+		};
+		93B8B9B6264C8540009F43B2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9307DBC6264DECB700425420 /* Collection View */,
+				9307DBC5264DECA500425420 /* View Controllers */,
+				93B8B9B1264C8405009F43B2 /* Airlinable.swift */,
+				93B8B9AF264C837A009F43B2 /* AirlinesCoordinator.swift */,
+				93B8B9B3264C8484009F43B2 /* Airlines.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		93B8B9BB264C858B009F43B2 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9A7264C7861009F43B2 /* Airline.swift */,
+				93B8B9B7264C8565009F43B2 /* AirlinesViewModel.swift */,
+				93B8B9B9264C8579009F43B2 /* AirlineDetailsViewModel.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		93B8B9BC264C85AF009F43B2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9A9264C7F58009F43B2 /* AirlineData.swift */,
+				93B8B9BD264C85E9009F43B2 /* AirlinesWebRepository.swift */,
+				93B8B9BF264C8604009F43B2 /* AirlinesRepository.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		93B8B9C7264C8A00009F43B2 /* Fake Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9C1264C8740009F43B2 /* FakeAirlinesWebRepository.swift */,
+				9307DBC7264DED8200425420 /* FakeDataProvider.swift */,
+			);
+			path = "Fake Implementations";
+			sourceTree = "<group>";
+		};
+		93B8B9CA264C8A34009F43B2 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9C8264C8A20009F43B2 /* AirlineData+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		93B8B9D3264C91E8009F43B2 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9CB264C8C72009F43B2 /* HttpClient.swift */,
+				93B8B9CD264C8D53009F43B2 /* HttpEndpoint.swift */,
+				93B8B9D1264C8E34009F43B2 /* HttpError.swift */,
+				93B8B9CF264C8D73009F43B2 /* HttpMethod.swift */,
+				93F78639264D3E0B00137113 /* Downloader.swift */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		93B8B9D6264CA7E6009F43B2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9307DBB2264D6FA900425420 /* DB */,
+				9307DBB3264D6FB800425420 /* Extensions */,
+				9307DBB4264D6FCE00425420 /* Core Data */,
+				9307DBB5264D6FE000425420 /* Data Providers */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		93B8B9D7264CA809009F43B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				93F7864C264D5D3100137113 /* CDPublisher.swift */,
+				93B8B9D4264C968D009F43B2 /* Publisher+Utils.swift */,
+				93F7863E264D56D100137113 /* URL+ImageTest.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		93B8B9D8264CA81B009F43B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B97C264C02B9009F43B2 /* Assets.xcassets */,
+				93B8B97E264C02B9009F43B2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93B8B9D9264CA82B009F43B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9D8264CA81B009F43B2 /* Resources */,
+				93B8B970264C02B7009F43B2 /* AppDelegate.swift */,
+				93B8B972264C02B7009F43B2 /* SceneDelegate.swift */,
+				93B8B981264C02B9009F43B2 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		93B8B9DA264CA843009F43B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				93B8B9D3264C91E8009F43B2 /* HttpClient */,
+				93B8B9D7264CA809009F43B2 /* Utils */,
+				93B8B9A3264C773F009F43B2 /* Coordinator.swift */,
+				93B8B9AD264C8328009F43B2 /* Storyboarded.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93B8B96C264C02B7009F43B2 /* SitaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B8B99A264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTest" */;
+			buildPhases = (
+				93B8B969264C02B7009F43B2 /* Sources */,
+				93B8B96A264C02B7009F43B2 /* Frameworks */,
+				93B8B96B264C02B7009F43B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SitaTest;
+			packageProductDependencies = (
+				93F7863C264D4A5700137113 /* SDWebImage */,
+				9307DBC3264DDE6800425420 /* CombineCocoa */,
+			);
+			productName = SitaTest;
+			productReference = 93B8B96D264C02B7009F43B2 /* SitaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93B8B985264C02B9009F43B2 /* SitaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B8B99D264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTestTests" */;
+			buildPhases = (
+				93B8B982264C02B9009F43B2 /* Sources */,
+				93B8B983264C02B9009F43B2 /* Frameworks */,
+				93B8B984264C02B9009F43B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B8B988264C02B9009F43B2 /* PBXTargetDependency */,
+			);
+			name = SitaTestTests;
+			productName = SitaTestTests;
+			productReference = 93B8B986264C02B9009F43B2 /* SitaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93B8B990264C02B9009F43B2 /* SitaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B8B9A0264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTestUITests" */;
+			buildPhases = (
+				93B8B98D264C02B9009F43B2 /* Sources */,
+				93B8B98E264C02B9009F43B2 /* Frameworks */,
+				93B8B98F264C02B9009F43B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B8B993264C02B9009F43B2 /* PBXTargetDependency */,
+			);
+			name = SitaTestUITests;
+			productName = SitaTestUITests;
+			productReference = 93B8B991264C02B9009F43B2 /* SitaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93B8B965264C02B7009F43B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					93B8B96C264C02B7009F43B2 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					93B8B985264C02B9009F43B2 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93B8B96C264C02B7009F43B2;
+					};
+					93B8B990264C02B9009F43B2 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 93B8B96C264C02B7009F43B2;
+					};
+				};
+			};
+			buildConfigurationList = 93B8B968264C02B7009F43B2 /* Build configuration list for PBXProject "SitaTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93B8B964264C02B7009F43B2;
+			packageReferences = (
+				93F7863B264D4A5700137113 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				9307DBC2264DDE6800425420 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
+			productRefGroup = 93B8B96E264C02B7009F43B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93B8B96C264C02B7009F43B2 /* SitaTest */,
+				93B8B985264C02B9009F43B2 /* SitaTestTests */,
+				93B8B990264C02B9009F43B2 /* SitaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93B8B96B264C02B7009F43B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B8B980264C02B9009F43B2 /* LaunchScreen.storyboard in Resources */,
+				93B8B9B4264C8484009F43B2 /* Airlines.storyboard in Resources */,
+				93B8B97D264C02B9009F43B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B984264C02B9009F43B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B98F264C02B9009F43B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93B8B969264C02B7009F43B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9307DBAC264D690800425420 /* CDAirline+Mapping.swift in Sources */,
+				93B8B9D2264C8E34009F43B2 /* HttpError.swift in Sources */,
+				93B8B9A8264C7861009F43B2 /* Airline.swift in Sources */,
+				93B8B9D5264C968D009F43B2 /* Publisher+Utils.swift in Sources */,
+				93B8B9B8264C8565009F43B2 /* AirlinesViewModel.swift in Sources */,
+				93B8B9AA264C7F58009F43B2 /* AirlineData.swift in Sources */,
+				93F78643264D58C200137113 /* DataProvidable.swift in Sources */,
+				9307DBB0264D6F6C00425420 /* CoreDataControllable.swift in Sources */,
+				93B8B971264C02B7009F43B2 /* AppDelegate.swift in Sources */,
+				93B8B9D0264C8D73009F43B2 /* HttpMethod.swift in Sources */,
+				9307DBAE264D6F4400425420 /* CoreDataContoller.swift in Sources */,
+				93F7863F264D56D100137113 /* URL+ImageTest.swift in Sources */,
+				93B8B9BA264C8579009F43B2 /* AirlineDetailsViewModel.swift in Sources */,
+				93B8B9A4264C773F009F43B2 /* Coordinator.swift in Sources */,
+				93B8B97B264C02B7009F43B2 /* SitaTest.xcdatamodeld in Sources */,
+				93B8B9BE264C85E9009F43B2 /* AirlinesWebRepository.swift in Sources */,
+				9307DBB7264D725B00425420 /* DataProviderError.swift in Sources */,
+				93B8B9CE264C8D53009F43B2 /* HttpEndpoint.swift in Sources */,
+				93B8B9AE264C8328009F43B2 /* Storyboarded.swift in Sources */,
+				93B8B9C0264C8604009F43B2 /* AirlinesRepository.swift in Sources */,
+				93F78636264D17BF00137113 /* AirlineCollectionCell.swift in Sources */,
+				93F78634264D171100137113 /* AirlinesDataSource.swift in Sources */,
+				93F78641264D58B900137113 /* CoreDataProvider.swift in Sources */,
+				93B8B9CC264C8C72009F43B2 /* HttpClient.swift in Sources */,
+				93B8B973264C02B7009F43B2 /* SceneDelegate.swift in Sources */,
+				93B8B9AC264C8308009F43B2 /* AirlineDetailsViewController.swift in Sources */,
+				93B8B9B2264C8405009F43B2 /* Airlinable.swift in Sources */,
+				93B8B9A6264C784E009F43B2 /* AirlinesViewController.swift in Sources */,
+				93F7864D264D5D3100137113 /* CDPublisher.swift in Sources */,
+				93F7863A264D3E0B00137113 /* Downloader.swift in Sources */,
+				93B8B9B0264C837A009F43B2 /* AirlinesCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B982264C02B9009F43B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9307DBC8264DED8200425420 /* FakeDataProvider.swift in Sources */,
+				93B8B9C2264C8740009F43B2 /* FakeAirlinesWebRepository.swift in Sources */,
+				93B8B9C9264C8A20009F43B2 /* AirlineData+Fixture.swift in Sources */,
+				93B8B9C6264C89CF009F43B2 /* AirlineDetailsViewModelSpec.swift in Sources */,
+				93B8B9C4264C8900009F43B2 /* AirlinesViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B8B98D264C02B9009F43B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B8B996264C02B9009F43B2 /* SitaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93B8B988264C02B9009F43B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93B8B96C264C02B7009F43B2 /* SitaTest */;
+			targetProxy = 93B8B987264C02B9009F43B2 /* PBXContainerItemProxy */;
+		};
+		93B8B993264C02B9009F43B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93B8B96C264C02B7009F43B2 /* SitaTest */;
+			targetProxy = 93B8B992264C02B9009F43B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93B8B97E264C02B9009F43B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93B8B97F264C02B9009F43B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93B8B998264C02B9009F43B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93B8B999264C02B9009F43B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93B8B99B264C02B9009F43B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTest/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93B8B99C264C02B9009F43B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTest/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93B8B99E264C02B9009F43B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SitaTest.app/SitaTest";
+			};
+			name = Debug;
+		};
+		93B8B99F264C02B9009F43B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SitaTest.app/SitaTest";
+			};
+			name = Release;
+		};
+		93B8B9A1264C02B9009F43B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SitaTest;
+			};
+			name = Debug;
+		};
+		93B8B9A2264C02B9009F43B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2L5Z8CAZCN;
+				INFOPLIST_FILE = SitaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nistruct.SitaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SitaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93B8B968264C02B7009F43B2 /* Build configuration list for PBXProject "SitaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B8B998264C02B9009F43B2 /* Debug */,
+				93B8B999264C02B9009F43B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B8B99A264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B8B99B264C02B9009F43B2 /* Debug */,
+				93B8B99C264C02B9009F43B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B8B99D264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B8B99E264C02B9009F43B2 /* Debug */,
+				93B8B99F264C02B9009F43B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B8B9A0264C02B9009F43B2 /* Build configuration list for PBXNativeTarget "SitaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93B8B9A1264C02B9009F43B2 /* Debug */,
+				93B8B9A2264C02B9009F43B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9307DBC2264DDE6800425420 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+		93F7863B264D4A5700137113 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9307DBC3264DDE6800425420 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9307DBC2264DDE6800425420 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		93F7863C264D4A5700137113 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93F7863B264D4A5700137113 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		93B8B979264C02B7009F43B2 /* SitaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93B8B97A264C02B7009F43B2 /* SitaTest.xcdatamodel */,
+			);
+			currentVersion = 93B8B97A264C02B7009F43B2 /* SitaTest.xcdatamodel */;
+			path = SitaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93B8B965264C02B7009F43B2 /* Project object */;
+}
