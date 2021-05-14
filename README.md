@@ -37,11 +37,12 @@ But, in this case when we have a lot of data in response I decided to handle thi
 6. I decided to create a UI using Storyboards as this was the fastest way. Also I use Coordinates for controlling the ViewControllers. No segues. I use Coordinates also for dependency injection for ViewControllers and ViewModels. 
 
 7. Data is downloaded from the server and stored in the local database. App reads data from the database and shows on the screen.
+This can be improved even further to have one extra layer and to hide "storing to database" and fetaching from the web" from ViewModel. ViewModel would just ask for data and would get the data, without knowing what happens under the hood.
 
-7. I am using CDPublisher, an combine publisher which is triggered every time when there is a change in the database, so the UI can be updated.
+8. I am using CDPublisher, an combine publisher which is triggered every time when there is a change in the database, so the UI can be updated.
 
-8. Unit tests: I created fake implementations and fixtures and I covered AirlineViewModel but I didn't had enough time to write all unit tests. Also for the same reason, for unit test target I didn't create separate AppDelegate and SceneDelegate.
+9. Unit tests: I created fake implementations and fixtures and I covered AirlineViewModel but I didn't had enough time to write all unit tests. Also for the same reason, for unit test target I didn't create separate AppDelegate and SceneDelegate.
 
-9. As there are only couple of images in the response, I was using the random image generator `https://picsum.photos/800?random=\(id)` with images 800x800 px. This is applied only for the grid so I can test it with many images.
+10. As there are only couple of images in the response, I was using the random image generator `https://picsum.photos/800?random=\(id)` with images 800x800 px. This is applied only for the grid so I can test it with many images.
 
-10. Item can be marked as favorite in detail screen. The status for this is visible on detail screen and on the grid, for each cell. Favorite info is stored in local database.
+11. Item can be marked as favorite in detail screen. The status for this is visible on detail screen and on the grid, for each cell. Favorite info is stored in local database.
